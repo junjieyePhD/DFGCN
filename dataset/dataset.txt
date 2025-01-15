@@ -1,0 +1,7 @@
+ETT：https://github.com/zhouhaoyi/ETDataset
+Electricity：https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
+Weather：https://www.bgc-jena.mpg.de/wetter/
+Traffic：https://pems.dot.ca.gov/
+solar：http://www.nrel.gov/grid/solar-power-data.html
+Exchange-rate：https://github.com/laiguokun/multivariate-time-series-data
+Flight：https://opensky-network.org/

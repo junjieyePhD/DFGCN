@@ -1,0 +1,32 @@
+#export CUDA_VISIBLE_DEVICES=1
+
+model_name=DFGCN
+
+
+for k in 0 1 2 3 4 5 6
+do
+python -u run.py \
+      --is_training 1 \
+      --root_path ./dataset/ETT-small/ \
+      --data_path ETTh2.csv \
+      --model_id ETTh2_96_96_$k \
+      --model $model_name \
+      --data ETTh2 \
+      --features M \
+      --seq_len 96 \
+      --pred_len 96 \
+      --e_layers 1 \
+      --enc_in 7 \
+      --des 'Exp' \
+      --d_model 64 \
+      --batch_size 64 \
+      --dropout 0.3 \
+      --learning_rate 0.001 \
+      --train_epochs 10 \
+      --k $k \
+      --patch_len 16
+done
+
+
+# patch_len = stride
+# RelU
